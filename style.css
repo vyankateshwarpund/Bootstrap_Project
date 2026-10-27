@@ -1,0 +1,633 @@
+/* ==========================================================================
+   TechNova - Responsive Stylesheet
+   Explicit Breakpoints Defined:
+   - Mobile (small):  320px - 480px   (max-width: 480px)
+   - Mobile (large):  481px - 767px   (min-width: 481px) and (max-width: 767px)
+   - Tablet:          768px - 1023px  (min-width: 768px) and (max-width: 1023px)
+   - Laptop:          1024px - 1439px (min-width: 1024px) and (max-width: 1439px)
+   - Desktop:         1440px and above (min-width: 1440px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Global & Base Styles
+   -------------------------------------------------------------------------- */
+:root {
+    --brand-primary: #0d6efd;
+    --brand-dark: #212529;
+    --brand-light: #f8f9fa;
+    --text-muted: #6c757d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Components & Transitions
+   -------------------------------------------------------------------------- */
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Card hover interactions */
+.service-card,
+.pricing-card,
+.team-card,
+.stat-box {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover,
+.pricing-card:hover,
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-weight: 800;
+    line-height: 1.15;
+    word-break: break-word;
+}
+
+.hero-card {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Stat Box */
+.stat-box {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.stat-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(13, 110, 253, 0.12);
+}
+
+.stat-number {
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* Services */
+.service-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-icon-box {
+    width: 58px;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Team */
+.team-card {
+    border-radius: 1rem;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    height: 100%;
+}
+
+.team-avatar-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.social-links a {
+    color: #6c757d;
+    margin: 0 0.4rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+    transform: translateY(-2px);
+}
+
+/* Google Map */
+.map-container {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    border: 0;
+    display: block;
+}
+
+
+/* ==========================================================================
+   1. MOBILE (SMALL) BREAKPOINT: 320px - 480px
+   max-width: 480px
+   ========================================================================== */
+@media (max-width: 480px) {
+    /* Layout & Spacing */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Navbar Mobile Dropdown */
+    .navbar-collapse {
+        background-color: #212529;
+        padding: 1.25rem 1rem;
+        border-radius: 0.75rem;
+        margin-top: 0.75rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem !important;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 2.25rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.85rem !important;
+        margin-top: 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .hero-section p.lead {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem !important;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-card {
+        padding: 1.5rem 1rem;
+        margin-top: 1.5rem;
+        max-width: 100% !important;
+    }
+
+    .hero-icon {
+        font-size: 50px !important;
+        margin: 0.75rem 0 !important;
+    }
+
+    /* Stats Grid: 2 columns */
+    .stat-box {
+        padding: 1rem 0.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.6rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 1.5rem 1.15rem;
+    }
+
+    .service-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .service-icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    /* About Us */
+    .about-feature-box {
+        padding: 1.75rem 1.25rem !important;
+    }
+
+    .about-feature-box i {
+        font-size: 3rem !important;
+    }
+
+    .about-feature-box h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Pricing */
+    .pricing-card .card-body {
+        padding: 1.5rem 1rem !important;
+    }
+
+    .pricing-card h1 {
+        font-size: 2rem;
+    }
+
+    .pricing-card ul li {
+        font-size: 0.88rem;
+    }
+
+    /* Team */
+    .team-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .team-avatar-box {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 0.75rem;
+    }
+
+    .team-avatar-box i {
+        font-size: 2rem !important;
+    }
+
+    /* FAQ */
+    .accordion-button {
+        font-size: 0.92rem;
+        padding: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.88rem;
+        padding: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-info {
+        padding: 0 !important;
+    }
+
+    .contact-form-card {
+        padding: 1.5rem 1.15rem !important;
+        margin-top: 1rem;
+    }
+
+    .map-container iframe {
+        height: 180px;
+    }
+
+    /* Footer */
+    footer .container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    footer .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 1rem;
+    }
+
+    footer .nav-item {
+        margin: 0 !important;
+    }
+
+    footer .social-links {
+        margin-top: 1rem;
+    }
+}
+
+
+/* ==========================================================================
+   2. MOBILE (LARGE) BREAKPOINT: 481px - 767px
+   min-width: 481px and max-width: 767px
+   ========================================================================== */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Navbar Collapse */
+    .navbar-collapse {
+        background-color: #212529;
+        padding: 1.25rem 1rem;
+        border-radius: 0.75rem;
+        margin-top: 0.75rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 3rem 0 2.5rem 0;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.25rem !important;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons .btn {
+        min-width: 180px;
+    }
+
+    .hero-card {
+        padding: 2rem 1.5rem;
+        margin-top: 2rem;
+        max-width: 380px !important;
+    }
+
+    .hero-icon {
+        font-size: 65px;
+    }
+
+    /* Stats Grid */
+    .stat-box {
+        padding: 1.15rem 0.75rem;
+    }
+
+    .stat-number {
+        font-size: 1.9rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    /* About Us */
+    .about-feature-box {
+        padding: 2.5rem 1.5rem !important;
+    }
+
+    /* Team */
+    .team-avatar-box {
+        width: 85px;
+        height: 85px;
+    }
+
+    /* Contact & Map */
+    .map-container iframe {
+        height: 220px;
+    }
+
+    .contact-form-card {
+        padding: 2rem 1.5rem !important;
+    }
+
+    /* Footer */
+    footer .nav {
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+
+/* ==========================================================================
+   3. TABLET BREAKPOINT: 768px - 1023px
+   min-width: 768px and max-width: 1023px
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Navbar Collapse when below 992px */
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background-color: #212529;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0.75rem;
+            margin-top: 0.75rem;
+        }
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 3.5rem 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-icon {
+        font-size: 70px;
+    }
+
+    /* Stats */
+    .stat-box {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .stat-number {
+        font-size: 2.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.88rem;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    /* Pricing */
+    .pricing-card h1 {
+        font-size: 2rem;
+    }
+
+    .pricing-card .card-body {
+        padding: 1.75rem 1.25rem !important;
+    }
+
+    /* Team */
+    .team-avatar-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Map */
+    .map-container iframe {
+        height: 240px;
+    }
+}
+
+
+/* ==========================================================================
+   4. LAPTOP BREAKPOINT: 1024px - 1439px
+   min-width: 1024px and max-width: 1439px
+   ========================================================================== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero-section {
+        padding: 4.5rem 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-card {
+        padding: 2.5rem 1.75rem;
+    }
+
+    .hero-icon {
+        font-size: 85px;
+    }
+
+    .stat-box {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.4rem;
+    }
+
+    .service-card {
+        padding: 2.25rem 1.5rem;
+    }
+
+    .team-avatar-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .map-container iframe {
+        height: 260px;
+    }
+}
+
+
+/* ==========================================================================
+   5. DESKTOP BREAKPOINT: 1440px and above
+   min-width: 1440px
+   ========================================================================== */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-section {
+        padding: 5.5rem 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-section p.lead {
+        font-size: 1.25rem;
+    }
+
+    .hero-card {
+        padding: 3rem 2rem;
+        max-width: 440px !important;
+    }
+
+    .hero-icon {
+        font-size: 100px;
+    }
+
+    .stat-box {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .stat-number {
+        font-size: 2.85rem;
+    }
+
+    .stat-label {
+        font-size: 1.05rem;
+    }
+
+    .service-card {
+        padding: 2.5rem 1.75rem;
+    }
+
+    .pricing-card .card-body {
+        padding: 2.25rem !important;
+    }
+
+    .pricing-card h1 {
+        font-size: 2.5rem;
+    }
+
+    .team-avatar-box {
+        width: 110px;
+        height: 110px;
+    }
+
+    .team-avatar-box i {
+        font-size: 2.5rem !important;
+    }
+
+    .map-container iframe {
+        height: 290px;
+    }
+}

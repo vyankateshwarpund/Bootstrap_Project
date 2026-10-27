@@ -4,246 +4,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNoova</title>
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TechNova - Digital Solutions</title>
 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Responsive CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
+    <!-- Header / Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <a class="navbar-brand fw-bold text-white mx-5">TechNova</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end mx-5 text-white " id="navbarText">
-                <ul class="navbar-nav mr-auto d-flex justify-content-end mx-5 text-white">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white">Home <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white">Pricing</a>
-                    </li>
-                </ul>
-                <div class="d-flex justify-content-end ">
-                    <button class="btn btn-primary my-2 my-sm-0 mx-2 " type="submit">Get Started</button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-white fs-4" href="#">TechNova</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-primary w-100">Get Started</a>
+                    </div>
                 </div>
-
             </div>
         </nav>
-        <!-- Home Content -->
-        <div class="bg-primary ">
-            <div class="container d-flex ">
-                <div class="container py-5 ">
-                    <p class="badge bg-warning text-dark">Innovative Technologies Solutions</p>
-                    <h1 class="fw-bold text-white my-4 display-2">Build Your Digital Future With Us</h1>
-                    <p class="text-white">We create modern websites, mobile applications and digital solutions that help
-                        businesses
-                        grow.</p>
-                    <button class="btn btn-light">Explore Services</button>
-                    <button class="btn btn-light">Contact Us</button>
-                </div>
-                <div
-                    class="container py-5 rounded rounded-5 bg-light d-flex justify-content-center align-items-center h-100 mt-4">
 
-                    <div class="col-5">
-                        <i class="fa-solid fa-laptop m-5 text-primary " style="font-size: 100px;"></i>
-                        <h2>Digital Inovations</h2>
-                        <p>Trasforma your ideas into powerful digital experiences.</p>
+        <!-- Hero / Home Content -->
+        <div class="bg-primary text-white hero-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <!-- Left Hero Content -->
+                    <div class="col-12 col-lg-7 text-center text-lg-start">
+                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold mb-3">
+                            Innovative Technologies Solutions
+                        </span>
+                        <h1 class="fw-bold text-white hero-title my-3">
+                            Build Your Digital Future With Us
+                        </h1>
+                        <p class="lead text-white-50 mb-4">
+                            We create modern websites, mobile applications and digital solutions that help
+                            businesses grow.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-light btn-lg px-4 fw-semibold">Explore Services</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg px-4 fw-semibold">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Card -->
+                    <div class="col-12 col-lg-5">
+                        <div class="hero-card text-center text-dark mx-auto">
+                            <i class="fa-solid fa-laptop text-primary hero-icon"></i>
+                            <h2 class="fw-bold mt-3 fs-3">Digital Innovations</h2>
+                            <p class="text-muted mb-0">Transform your ideas into powerful digital experiences.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class=" container p-3 mt-5  ">
-        <div class="d-flex justify-content-around ">
-            <div class="text-center rounded rounded-5 ">
-                <h1 class="text-primary">250+</h1>
-                <p>Projects Completed</p>
-            </div>
 
-            <div class="text-center rounded rounded-5 ">
-                <h1 class="text-primary">120+</h1>
-                <p>Clients</p>
-            </div>
-
-            <div class="text-center rounded rounded-5">
-                <h1 class="text-primary">15+</h1>
-                <p>Countries</p>
-            </div>
-
-            <div class="text-center rounded rounded-5">
-                <h1 class="text-primary">10+</h1>
-                <p>Years of Experience</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- What we do -->
-    <section class="container">
-        <div class="text-center mt-4">
-            <span class="badge bg-primary mb-3 ">Our Services</span>
-            <h2>What We Do ?</h2>
-            <p>Complete Technology Solutions for modern Businesses.</p>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="row mt-3">
-
-            <div class="col-md-4">
-                <div class="card-body mt-3 p-5">
-                    <div class="mb-3 d-inline-block">
-                        <i class="fa-solid fa-code text-white p-3 bg-primary rounded fs-1"></i>
-                    </div>
-                    <h5>Web Development</h5>
-                    <p>Responsive and modern websites for businesses and organizations.</p>
-                    <a class="btn btn-primary">Learn More</a>
+    <!-- Stats Section -->
+    <section class="container py-4 my-3">
+        <div class="row g-3 g-md-4 text-center justify-content-center">
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <h2 class="text-primary stat-number">250+</h2>
+                    <p class="stat-label">Projects Completed</p>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card-body mt-3 p-5">
-                    <div class="mb-3 d-inline-block">
-                        <i class="fa-solid fa-mobile-screen-button text-white p-3 bg-success rounded fs-1"></i>
-                    </div>
-                    <h5>Mobile App Development</h5>
-                    <p>Custom mobile applications for iOS and Android platforms.</p>
-                    <a class="btn btn-success">Learn More</a>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <h2 class="text-primary stat-number">120+</h2>
+                    <p class="stat-label">Clients</p>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card-body mt-3 p-5">
-                    <div class="mb-3 d-inline-block">
-                        <i class="fa-solid fa-chart-line text-white p-3 bg-warning rounded fs-1"></i>
-                    </div>
-                    <h5>Data Analysis</h5>
-                    <p>Insights and analytics to drive business decisions.</p>
-                    <a class="btn btn-warning">Learn More</a>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <h2 class="text-primary stat-number">15+</h2>
+                    <p class="stat-label">Countries</p>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card-body mt-3 p-5">
-                    <div class="mb-3 d-inline-block">
-                        <i class="fa-solid fa-server text-white p-3 bg-dark rounded fs-1"></i>
-                    </div>
-                    <h5>Backend Development</h5>
-                    <p>Robust and scalable backend solutions for modern applications.</p>
-                    <a class="btn btn-dark">Learn More</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card-body mt-3 p-5">
-                    <div class="mb-3 d-inline-block">
-                        <i class="fa-solid fa-arrow-trend-up text-white p-3 bg-info rounded fs-1"></i>
-                    </div>
-                    <h5>Digital Marketing</h5>
-                    <p>Strategic marketing solutions to grow your online presence.</p>
-                    <a class="btn btn-info">Learn More</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card-body mt-3 p-5">
-                    <div class="mb-3 d-inline-block">
-                        <i class="fa-solid fa-shield-alt text-white p-3 bg-danger rounded fs-1"></i>
-                    </div>
-                    <h5>Cybersecurity</h5>
-                    <p>Protect your business with our comprehensive security solutions.</p>
-                    <a class="btn btn-danger">Learn More</a>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <h2 class="text-primary stat-number">10+</h2>
+                    <p class="stat-label">Years of Experience</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- What We Do / Services -->
+    <section id="services" class="container py-5">
+        <div class="text-center mb-4">
+            <span class="badge bg-primary px-3 py-2 rounded-pill mb-2">Our Services</span>
+            <h2 class="fw-bold">What We Do?</h2>
+            <p class="text-muted">Complete Technology Solutions for modern Businesses.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="service-card shadow-sm">
+                    <div>
+                        <div class="service-icon-box bg-primary text-white">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Web Development</h4>
+                        <p class="text-muted">Responsive and modern websites tailored for businesses and organizations.</p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#contact" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="service-card shadow-sm">
+                    <div>
+                        <div class="service-icon-box bg-success text-white">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Mobile App Development</h4>
+                        <p class="text-muted">Custom mobile applications for iOS and Android platforms with smooth UX.</p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#contact" class="btn btn-outline-success btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="service-card shadow-sm">
+                    <div>
+                        <div class="service-icon-box bg-warning text-dark">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Data Analysis</h4>
+                        <p class="text-muted">Actionable insights and advanced analytics to drive your strategic business decisions.</p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#contact" class="btn btn-outline-warning btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="service-card shadow-sm">
+                    <div>
+                        <div class="service-icon-box bg-dark text-white">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Backend Development</h4>
+                        <p class="text-muted">Robust, scalable and secure backend architectures for high-traffic applications.</p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#contact" class="btn btn-outline-dark btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="service-card shadow-sm">
+                    <div>
+                        <div class="service-icon-box bg-info text-white">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Digital Marketing</h4>
+                        <p class="text-muted">Strategic marketing campaigns and SEO solutions to grow your online presence.</p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#contact" class="btn btn-outline-info btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="service-card shadow-sm">
+                    <div>
+                        <div class="service-icon-box bg-danger text-white">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Cybersecurity</h4>
+                        <p class="text-muted">Protect your data and digital infrastructure with enterprise-grade security protocols.</p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#contact" class="btn btn-outline-danger btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Us -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 bg-primary text-center p-5 rounded rounded-4">
-                <i class="fa-solid fa-building  p-3 text-white rounded display-1"></i>
-                <h2 class="text-white">10+ Years of Inovative</h2>
-                <p class="text-white">Helping businesses transform their digital visions into reality.</p>
-            </div>
-
-            <div class="col p-3">
-                <h2 class="badge bg-primary d-inline-block ">About Us</h2>
-                <h2>We Turn Ideas into Digital Products</h2>
-                <p>TechNova is a technology company that specializes in creating innovative digital solutions for
-                    businesses.</p>
-                <div class="row">
-                    <div class="col-6 mt-2">✅Experience Team</div>
-                    <div class="col-6 mt-2">✅Modern Technologies</div>
-                    <div class="col-6 mt-2">✅Affordable Pricing</div>
-                    <div class="col-6 mt-2">✅24/7 Support</div>
+    <section id="about" class="container py-5">
+        <div class="row g-4 align-items-center">
+            <!-- Left Info Block -->
+            <div class="col-12 col-lg-6">
+                <div class="bg-primary text-center p-4 p-md-5 rounded rounded-4 text-white about-feature-box shadow">
+                    <i class="fa-solid fa-building p-3 text-white display-1"></i>
+                    <h2 class="text-white fw-bold mt-2">10+ Years of Innovation</h2>
+                    <p class="text-white-50 mb-0">Helping businesses transform their digital visions into reality.</p>
                 </div>
             </div>
+
+            <!-- Right Info Block -->
+            <div class="col-12 col-lg-6">
+                <span class="badge bg-primary px-3 py-2 rounded-pill mb-2">About Us</span>
+                <h2 class="fw-bold mb-3">We Turn Ideas into Digital Products</h2>
+                <p class="text-muted">
+                    TechNova is a technology company that specializes in creating innovative digital solutions for businesses. We bring together engineering excellence, intuitive design, and proven methodologies to help companies thrive.
+                </p>
+                <div class="row g-3 mt-3">
+                    <div class="col-12 col-sm-6">
+                        <div class="p-2 border rounded bg-white shadow-sm">
+                            <span class="text-success fw-bold me-1">✔</span> Experienced Team
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="p-2 border rounded bg-white shadow-sm">
+                            <span class="text-success fw-bold me-1">✔</span> Modern Technologies
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="p-2 border rounded bg-white shadow-sm">
+                            <span class="text-success fw-bold me-1">✔</span> Affordable Pricing
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="p-2 border rounded bg-white shadow-sm">
+                            <span class="text-success fw-bold me-1">✔</span> 24/7 Support
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- Pricing section -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center card-header">Basic Plan</h3>
-                        <h1 class="text-center ">₹9,999</h1>
-                        <p class="text-center text-muted">One time payment</p>
-                        <div class="mt-2">✅ 5 Pages Website</div>
-                        <div class="mt-2">✅ Responsive Design</div>
-                        <div class="mt-2">✅ Basic SEO</div>
-                        <div class="mt-2">✅ 1 Month Support</div>
-                        <div class="text-center mt-3">
-                            <button class="btn btn-primary">Choose Plan</button>
-                        </div>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="container py-5">
+        <div class="text-center mb-4">
+            <span class="badge bg-primary px-3 py-2 rounded-pill mb-2">Pricing Plans</span>
+            <h2 class="fw-bold">Simple, Transparent Pricing</h2>
+            <p class="text-muted">Choose the package that fits your business needs.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Basic Plan -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card pricing-card shadow-sm border-0">
+                    <div class="card-header bg-light text-center py-3">
+                        <h4 class="fw-bold mb-0">Basic Plan</h4>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h1 class="fw-bold text-dark my-2">₹9,999</h1>
+                        <p class="text-muted small">One-time payment</p>
+                        <ul class="list-unstyled text-start my-4">
+                            <li class="py-2 border-bottom">✔ 5 Pages Website</li>
+                            <li class="py-2 border-bottom">✔ Responsive Design</li>
+                            <li class="py-2 border-bottom">✔ Basic SEO</li>
+                            <li class="py-2">✔ 1 Month Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100 py-2">Choose Plan</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body ">
-                        <div class="card-header bg-primary">
-                            <span class="badge bg-warning d-inline-block">Most Popular</span>
-                            <h3 class="text-center text-white">Professional Plan</h3>
-                        </div>
-                        <h1 class="text-center ">₹24,999</h1>
-                        <p class="text-center text-muted">One time payment</p>
-                        <div class="mt-2">✅ 10 Pages Website</div>
-                        <div class="mt-2">✅ Responsive Design</div>
-                        <div class="mt-2">✅ Basic SEO</div>
-                        <div class="mt-2">✅ 1 Month Support</div>
-                        <div class="text-center mt-3">
-                            <button class="btn btn-warning text-white">Choose Plan</button>
-                        </div>
+            <!-- Professional Plan -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card pricing-card shadow border-primary border-2 position-relative">
+                    <div class="card-header bg-primary text-white text-center py-3 position-relative">
+                        <span class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle px-3 py-1 rounded-pill">
+                            Most Popular
+                        </span>
+                        <h4 class="fw-bold mb-0">Professional Plan</h4>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h1 class="fw-bold text-primary my-2">₹24,999</h1>
+                        <p class="text-muted small">One-time payment</p>
+                        <ul class="list-unstyled text-start my-4">
+                            <li class="py-2 border-bottom">✔ 10 Pages Website</li>
+                            <li class="py-2 border-bottom">✔ Responsive Design</li>
+                            <li class="py-2 border-bottom">✔ Advanced SEO & Analytics</li>
+                            <li class="py-2">✔ 3 Months Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100 py-2">Choose Plan</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="text-center card-header bg-dark text-white">Enterprise Plan</h3>
-                        <h1 class="text-center ">₹49,999</h1>
-                        <p class="text-center text-muted">One time payment</p>
-                        <div class="mt-2">✅ 20 Pages Website</div>
-                        <div class="mt-2">✅ Responsive Design</div>
-                        <div class="mt-2">✅ Basic SEO</div>
-                        <div class="mt-2">✅ 1 Month Support</div>
-                        <div class="text-center mt-3">
-                            <button class="btn btn-dark text-white">Choose Plan</button>
-                        </div>
+            <!-- Enterprise Plan -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card pricing-card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white text-center py-3">
+                        <h4 class="fw-bold mb-0">Enterprise Plan</h4>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h1 class="fw-bold text-dark my-2">₹49,999</h1>
+                        <p class="text-muted small">One-time payment</p>
+                        <ul class="list-unstyled text-start my-4">
+                            <li class="py-2 border-bottom">✔ 20+ Pages Website</li>
+                            <li class="py-2 border-bottom">✔ Custom Features & Integrations</li>
+                            <li class="py-2 border-bottom">✔ Full SEO & Marketing Suite</li>
+                            <li class="py-2">✔ 1 Year Dedicated Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-dark w-100 py-2">Choose Plan</a>
                     </div>
                 </div>
             </div>
@@ -251,248 +353,283 @@
     </section>
 
     <!-- Our Team -->
-    <section class="container bg-light py-5">
-        <div class="text-center">
-            <span class="badge bg-primary">OUR TEAM </span>
-            <h2>Meet Our Experts</h2>
-        </div>
-        <div class="d-flex justify-content-around mt-5">
-            <div class="flex-item text-center bg-white p-3 rounded shadow-sm">
-                <div class="bg-primary d-inline-block rounded-circle p-3">
-                    <i class="fa-regular fa-user display-1 text-white"></i>
-                </div>
-                <h3>Rahul Sharma</h3>
-                <p class="text-primary">CEO & Founder</p>
-                <p class="text-muted">Technology Strategist and business leader.</p>
-                <div>
-                    <i class="fa-brands fa-linkedin fs=3"></i>
-                    <i class="fa-brands fa-square-twitter fs=3"></i>
-                    <i class="fa-brands fa-envelope fs=3"></i>
-                </div>
+    <section id="team" class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="badge bg-primary px-3 py-2 rounded-pill mb-2">OUR TEAM</span>
+                <h2 class="fw-bold">Meet Our Experts</h2>
+                <p class="text-muted">The talented professionals behind TechNova.</p>
             </div>
 
-
-            <div class="flex-item text-center bg-white p-3 rounded shadow-sm">
-                <div class="bg-success d-inline-block rounded-circle p-3">
-                    <i class="fa-regular fa-user display-1 text-white"></i>
+            <div class="row g-4 justify-content-center">
+                <!-- Member 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="team-card text-center shadow-sm">
+                        <div class="team-avatar-box bg-primary text-white">
+                            <i class="fa-solid fa-user-tie fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-1">Rahul Sharma</h4>
+                        <p class="text-primary fw-semibold mb-2">CEO & Founder</p>
+                        <p class="text-muted small mb-3">Technology strategist and business leader with 10+ years experience.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <h3>Priya Patil</h3>
-                <p class="text-primary">Lead Developer</p>
-                <p class="text-muted">Software Engineer and problem solver.</p>
-                <div>
-                    <i class="fa-brands fa-linkedin fs=3"></i>
-                    <i class="fa-brands fa-square-twitter fs=3"></i>
-                    <i class="fa-brands fa-envelope fs=3"></i>
-                </div>
-            </div>
 
-
-            <div class="flex-item text-center bg-white p-3 rounded shadow-sm">
-                <div class="bg-warning d-inline-block rounded-circle p-3">
-                    <i class="fa-regular fa-user display-1 text-white"></i>
+                <!-- Member 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="team-card text-center shadow-sm">
+                        <div class="team-avatar-box bg-success text-white">
+                            <i class="fa-solid fa-user-gear fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-1">Priya Patil</h4>
+                        <p class="text-success fw-semibold mb-2">Lead Developer</p>
+                        <p class="text-muted small mb-3">Full-stack software architect, agile leader, and problem solver.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <h3>Amit verma</h3>
-                <p class="text-primary">Product Manager</p>
-                <p class="text-muted">Product strategy and management expert.</p>
-                <div>
-                    <i class="fa-brands fa-linkedin fs=3"></i>
-                    <i class="fa-brands fa-square-twitter fs=3"></i>
-                    <i class="fa-brands fa-envelope fs=3"></i>
+
+                <!-- Member 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="team-card text-center shadow-sm">
+                        <div class="team-avatar-box bg-warning text-dark">
+                            <i class="fa-solid fa-user-astronaut fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-1">Amit Verma</h4>
+                        <p class="text-warning fw-semibold mb-2">Product Manager</p>
+                        <p class="text-muted small mb-3">Product lifecycle specialist, user researcher, and growth optimizer.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="bg-light py-5">
+    <section id="faq" class="py-5">
         <div class="container">
-            <div class="text-center">
-                <span class="badge bg-primary">FAQ</span>
-                <h2>Frequently Asked Questions</h2>
+            <div class="text-center mb-4">
+                <span class="badge bg-primary px-3 py-2 rounded-pill mb-2">FAQ</span>
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="text-muted">Got questions? We've got answers.</p>
             </div>
-        </div>
 
-        <div class="container mt-5">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How long does a website takes?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Standars website takes 2-3 weeks to complete. However, the timeline may vary based on the
-                            complexity of the project and the specific requirements of the client.
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="accordion shadow-sm" id="accordionExample">
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How long does a website take to build?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    Standard websites typically take 2-3 weeks to design, develop, and launch. However, the timeline may vary based on project complexity, integrations, and content readiness.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Do you provide website maintenance and support?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Yes, we provide website maintenance and support services to ensure that your website remains
-                            up-to-date, secure, and fully functional. Our team can assist with regular updates, bug
-                            fixes,
-                            security monitoring, and technical support as needed.
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Do you provide website maintenance and support?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    Yes! We provide complete website maintenance and support packages to ensure your platform remains up-to-date, secure, and fast. Our team handles regular updates, security audits, backups, and bug fixes.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            What is your pricing model?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            our pricing model is based on the complexity and scope of the project, with a flat rate for
-                            the
-                            initial development phase and ongoing maintenance and support services.
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    What is your pricing and payment model?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-muted">
+                                    We offer milestone-based pricing for custom projects and straightforward fixed pricing for our standard plans. Milestone payments are distributed across project milestones so you always pay as work is verified.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-primary">
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-primary py-5">
         <div class="container">
-            <div class="row">
-                <div class="col text-white py-4 ms-2">
-                <span class="badge bg-warning d-inline-block text-dark">Contact Us</span>
-                    <h2 class="text-white text-bold">Let's Build Something Great</h2>
-                    <p class="text-white">Have a project in mind? Contact our team today.</p>
-                    <div class="d-flex mt-3">
-                        <i class ="fa-solid fa-location-dot"></i>
-                        <span class="ms-2">Mumbai,Maharatra,India</span>
-                    </div>
-                    <div class="d-flex mt-3">
-                        <i class ="fa-solid fa-envelope"></i>
-                        <span class="ms-2"><a href="info@technova.com" class="text-white"> info@technova.com</a></span>
-                    </div>
-                    <div class="d-flex mt-3">
-                        <i class ="fa-solid fa-phone"></i>
-                        <span class="ms-2"><a href="tel:+919876543210" class="text-white">+91 9876543210</a></span>
-                    </div>
-                    <!-- Location map -->
-                     <div class="mapouter mt-3">
-                        <div class="gmap_canvas">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8471112361262!2d77.75140287502823!3d20.918469880703366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a4b72acbdf9d%3A0x99f68372daee115f!2sCCIT!5e0!3m2!1sen!2sin!4v1786335624389!5m2!1sen!2sin" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div class="row g-4 align-items-center">
+                <!-- Contact Details & Map -->
+                <div class="col-12 col-lg-6 text-white contact-info">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold mb-2">Contact Us</span>
+                    <h2 class="fw-bold text-white mb-2">Let's Build Something Great</h2>
+                    <p class="text-white-50 mb-4">Have a project in mind? Contact our team today for a free consultation.</p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-white bg-opacity-10 p-3 rounded-circle text-white me-3">
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
+                        <div>
+                            <div class="small text-white-50">Our Office</div>
+                            <strong>Mumbai, Maharashtra, India</strong>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-white bg-opacity-10 p-3 rounded-circle text-white me-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="small text-white-50">Email Us</div>
+                            <a href="mailto:info@technova.com" class="text-white text-decoration-none fw-bold">info@technova.com</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-white bg-opacity-10 p-3 rounded-circle text-white me-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="small text-white-50">Call Us</div>
+                            <a href="tel:+919876543210" class="text-white text-decoration-none fw-bold">+91 9876543210</a>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Google Map -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8471112361262!2d77.75140287502823!3d20.918469880703366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a4b72acbdf9d%3A0x99f68372daee115f!2sCCIT!5e0!3m2!1sen!2sin!4v1786335624389!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                 </div>
 
-                <div class="col mt-4">
-                    <form class="p-4 ">
-                        <div class="bg-light p-4 rounded rounded-4">
-                            <h2 class="text-primary text-bold text-center mb-4">Contact Form</h2>
-                            <div class="row ">
-                                <div class="mb-3 col  ">
-                                    <label for="name" class="form-label text-dark">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <!-- Contact Form -->
+                <div class="col-12 col-lg-6">
+                    <div class="bg-light p-4 p-md-5 rounded rounded-4 contact-form-card shadow">
+                        <h3 class="text-primary fw-bold text-center mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <label for="name" class="form-label text-dark small fw-semibold">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                                 </div>
-                                <div class="mb-3 col">
-                                    <label for="email" class="form-label text-dark">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                <div class="col-12 col-sm-6">
+                                    <label for="email" class="form-label text-dark small fw-semibold">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label text-dark small fw-semibold">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Project inquiry..." required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label text-dark small fw-semibold">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Tell us about your project requirements..." required></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <button type="submit" class="btn btn-primary px-5 py-2 fw-semibold w-100 w-sm-auto">
+                                        Send Message
+                                    </button>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label text-dark">Subject</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label text-dark">Message</label>
-                                <textarea class="form-control" id="message" rows="3"
-                                placeholder="Enter your message"></textarea>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary text-white">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
+
     <!-- Footer -->
-<footer class="bg-dark text-white py-2">
-    <div class="container py-5">
+    <footer class="bg-dark text-white py-4">
+        <div class="container py-3">
+            <div class="row g-4 align-items-center">
+                <!-- Brand & Description -->
+                <div class="col-12 col-md-5 text-center text-md-start">
+                    <h4 class="fw-bold text-white mb-1">TechNova</h4>
+                    <p class="text-white-50 mb-0 small">
+                        Discover the Future of Technology. Building modern digital experiences that scale.
+                    </p>
+                </div>
 
-        <!-- Main Footer Content -->
-        <div class="d-flex justify-content-between align-items-start">
-
-            <!-- Brand -->
-            <div>
-                <h4>TechNova</h4>
-                <p class="text-white mb-0">
-                    Discover the Future of Technology
-                </p>
-            </div>
-
-            <!-- Right Section -->
-            <div class="text-end">
-
-                <!-- Navigation -->
-                <ul class="nav justify-content-end">
-                    <li class="nav-item ms-3">
-                        <a class="nav-link text-white">Home</a>
-                    </li>
-
-                    <li class="nav-item ms-3">
-                        <a class="nav-link text-white">Services</a>
-                    </li>
-
-                    <li class="nav-item ms-3">
-                        <a class="nav-link text-white">About</a>
-                    </li>
-
-                    <li class="nav-item ms-3">
-                        <a class="nav-link text-white">Contact</a>
-                    </li>
-                </ul>
+                <!-- Footer Nav -->
+                <div class="col-12 col-md-4 text-center">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 px-2 py-1" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 px-2 py-1" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 px-2 py-1" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 px-2 py-1" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 px-2 py-1" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
                 <!-- Social Media -->
-                <div class="d-flex justify-content-end mt-3">
-                    <a class="text-white mx-2">
-                        <i class="fa-brands fa-facebook fs-4"></i>
-                    </a>
-
-                    <a class="text-white mx-2">
-                        <i class="fa-brands fa-twitter fs-4"></i>
-                    </a>
-
-                    <a class="text-white mx-2">
-                        <i class="fa-brands fa-linkedin fs-4"></i>
-                    </a>
-
-                    <a class="text-white mx-2">
-                        <i class="fa-brands fa-instagram fs-4"></i>
-                    </a>
+                <div class="col-12 col-md-3 text-center text-md-end">
+                    <div class="d-inline-flex gap-3">
+                        <a href="#" class="text-white-50 fs-5" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white-50 fs-5" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white-50 fs-5" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-white-50 fs-5" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
+            </div>
 
+            <hr class="border-secondary my-4">
+
+            <!-- Copyright -->
+            <div class="text-center text-white-50 small">
+                &copy; 2024 TechNova. All rights reserved.
             </div>
         </div>
+    </footer>
 
-        <!-- Divider -->
-        <hr>
-
-        <!-- Copyright -->
-        <div class="text-center mt-3">
-            <p class="text-white mb-0">
-                &copy; 2024 TechNova. All rights reserved.
-            </p>
-        </div>
-
-    </div>
-</footer>
-
+    <!-- Bootstrap 5 Bundle JS (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
